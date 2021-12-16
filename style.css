@@ -5,6 +5,9 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+html{
+    scroll-behavior: smooth;
+}
 .max-width{
     max-width: 1300px;
     padding: 0 80px;
@@ -63,6 +66,29 @@
     font-size: 23px;
     cursor: pointer;
     display: none;
+}
+.scroll-up-btn{
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: crimson;
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.scroll-up-btn.show{
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
 }
 
 /* home style */
@@ -146,13 +172,13 @@ section .title::after{
 }
 
 /*about section style*/
-.about, .skill,.activity,.project,.certificate{
+.about, .skill,.activity,.project,.certificate, footer{
     font-family: 'Poppins',sans-serif;
 }
 .about .title::after{
     content: "who i am";
 }
-.about .about-content,.skill .skill-content{
+.about .about-content,.skill .skill-content ,.activity .act-content ,.certificate .cer-content,.project .pro-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -186,6 +212,16 @@ section .title::after{
     font-weight: 600;
     color: crimson;
 }
+.about .about-content .right a{
+    color: #111;
+}
+.about .about-content .right p .icon{
+    margin: 3px;
+}
+.about .about-content .right a:hover{
+    color: crimson;
+}
+
 /*skill style*/
 .skill{
     color: #fff;
@@ -204,6 +240,7 @@ section .title::after{
     text-align: center;
     border-radius: 6px;
     padding: 20px 25px;
+    margin-bottom: 20px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -318,8 +355,19 @@ section .title::after{
     font-weight: 600;
 }
 
-
-
+/*footer style*/
+footer{
+    background: #111;
+    padding: 20px 23px;
+    color:#fff;
+}
+footer span a{
+    color: crimson;
+    text-decoration: none;
+}
+footer span a:hover{
+    text-decoration: underline;
+}
 
 
 
