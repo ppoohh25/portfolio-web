@@ -305,7 +305,7 @@ section .title::after{
     margin: auto;
 }
 .activity .title::after{
-    content: "what i have done";
+    content: "A c t i v i t y";
 }
 .activity .act-content .row .act{
     margin: 8px;
