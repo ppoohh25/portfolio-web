@@ -68,7 +68,7 @@ html{
     display: none;
 }
 .scroll-up-btn{
-    position: fixed;
+    position:fixed;
     height: 45px;
     width: 42px;
     background: crimson;
@@ -554,11 +554,51 @@ footer span a:hover{
     }
 }
 
+
 @media (max-width: 500px) {
     .home .home-content .text-2{
         font-size: 50px;
     }
     .home .home-content .text-3{
         font-size: 27px;
+    }
+}
+
+@media (max-width: 490px) {
+    .home .home-content .text-2{
+        font-size: 40px;
+    }
+    .home .home-content .text-3{
+        font-size: 27px;
+    }
+}
+
+@media (max-width: 360px) {
+    .home .home-content .text-1{
+        font-size: 27px;
+    }
+    .home .home-content .text-2{
+        font-size: 35px;
+    }
+    .home .home-content .text-3{
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 320px) {
+    .home .home-content .text-1{
+        font-size: 24px;
+    }
+    .home .home-content .text-2{
+        font-size: 32px;
+    }
+    .home .home-content .text-3{
+        font-size: 18px;
+    }
+    .about .about-content .left img{
+        height: 400px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 6px;
     }
 }
