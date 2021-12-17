@@ -292,6 +292,7 @@ section .title::after{
     border-radius: 6px;
     display: block;
     margin: 0 auto;
+    border:  3px solid crimson;
 }
 .pro{
     flex-basis: 29%;
@@ -317,6 +318,7 @@ section .title::after{
     border-radius: 6px;
     display: block;
     margin: 0 auto;
+    border:  3px solid crimson;
 }
 .act{
     flex-basis: 29%;
@@ -346,6 +348,7 @@ section .title::after{
     border-radius: 6px;
     display: block;
     margin: 0 auto;
+    border:  3px solid crimson;
 }
 .cer{
     flex-basis: 18%;
